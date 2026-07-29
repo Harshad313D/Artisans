@@ -1,3 +1,4 @@
+```md
 Virasat Jewels 👑
 
 A stunning, highly responsive frontend e-commerce web application dedicated to showcasing and selling authentic Indian artisan jewelry. Built with React, Vite, and Tailwind CSS, this project features a luxury "frosted glass" navigation, rich heritage styling, and dynamic product routing.
@@ -18,42 +19,13 @@ You can download the code using one of two methods:
 Method A: Using Git (Recommended)
 Open your terminal and run the following command to clone the repository:
 
-git clone https://github.com/your-username/virasat-jewels.git
+git clone https://github.com/Harshad313D/Artisans.git
 
-Method B: Download ZIP
-
-Click the green Code button at the top right of the repository.
-
-Select Download ZIP.
-
-Locate the downloaded .zip file on your computer.
-
-Right-click the file and select Extract All... (Windows) or double-click to expand (Mac) to a folder of your choice.
-
-Step 2: Install Dependencies
-
-Once you have the code, navigate into the project folder using your terminal:
-
-cd virasat-jewels
-
-Next, install all the required packages (Node Modules) by running:
-
-npm install
-
-Note: This command reads the package.json file and downloads all the necessary tools (like React Router, Tailwind, and Lucide Icons) into a hidden node_modules folder.
-
-Step 3: Run the Application
-
-Start the local development server:
-
-npm run dev
-
-Your terminal will provide a local link (usually http://localhost:5173). Click it or copy-paste it into your browser to see the website live!
-
-📂 Folder Structure
+## 📂 Folder Structure
 
 Here is a visual map of how the codebase is organized so you know exactly where to find things:
 
+```text
 virasat-jewels/
 ├── node_modules/         # Automatically generated folder containing project dependencies
 ├── public/               # Static assets that don't need processing (e.g., favicon)
@@ -74,19 +46,26 @@ virasat-jewels/
 ├── tailwind.config.js    # Custom Tailwind settings (colors, fonts, border-radii)
 └── vite.config.js        # Vite bundler configuration
 
-🗺️ Pages Explained
+```
 
-This application uses react-router-dom to navigate seamlessly between different views without reloading the browser.
+---
 
-Home.jsx (/): The storefront window. It features an immersive hero background with a liquid-blur navigation bar that turns solid on scroll. It highlights the heritage of Indian jewelry and previews curated masterpieces.
+## 🗺️ Pages Explained
 
-Products.jsx (/products): The royal treasury. A responsive grid displaying all 25 artisan products with strict aspect ratios to ensure uniformity across all screen sizes.
+This application uses `react-router-dom` to navigate seamlessly between different views without reloading the browser.
 
-ProductDetail.jsx (/product/:id): A dynamic page that reads the URL ID, searches data.js, and renders specific details (price, artisan name, description) for the selected item.
+* **`Home.jsx` (`/`)**: The storefront window. It features an immersive hero background with a liquid-blur navigation bar that turns solid on scroll. It highlights the heritage of Indian jewelry and previews curated masterpieces.
+* **`Products.jsx` (`/products`)**: The royal treasury. A responsive grid displaying all 25 artisan products with strict aspect ratios to ensure uniformity across all screen sizes.
+* **`ProductDetail.jsx` (`/product/:id`)**: A dynamic page that reads the URL ID, searches `data.js`, and renders specific details (price, artisan name, description) for the selected item.
+* **`About.jsx` (`/about`)**: A storytelling page focusing on the "Karigars" (artisans). It explores the regional crafting styles like Rajasthani Kundan and Tamil Nadu Temple jewelry.
+* **`Contact.jsx` (`/contact`)**: Features a clean, professional inquiry form alongside the physical addresses and contact details for the Mumbai and Jaipur ateliers.
 
-About.jsx (/about): A storytelling page focusing on the "Karigars" (artisans). It explores the regional crafting styles like Rajasthani Kundan and Tamil Nadu Temple jewelry.
+---
 
-Contact.jsx (/contact): Features a clean, professional inquiry form alongside the physical addresses and contact details for the Mumbai and Jaipur ateliers.
+## 👨‍💻 Maintainer
 
-👨‍💻 Maintainer
-Built and maintained by Harshad.
+Built and maintained by **Harshad**.
+
+```
+
+```
