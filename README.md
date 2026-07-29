@@ -1,3 +1,4 @@
+```md
 Virasat Jewels 👑
 
 A stunning, highly responsive frontend e-commerce web application dedicated to showcasing and selling authentic Indian artisan jewelry. Built with React, Vite, and Tailwind CSS, this project features a luxury "frosted glass" navigation, rich heritage styling, and dynamic product routing.
