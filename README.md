@@ -1,67 +1,24 @@
-```md
-# Virasat Jewels 👑
+Virasat Jewels 👑
 
-A stunning, highly responsive frontend e-commerce web application dedicated to showcasing and selling authentic Indian artisan jewelry. Built with **React**, **Vite**, and **Tailwind CSS**, this project features a luxury "frosted glass" navigation, rich heritage styling, and dynamic product routing.
+A stunning, highly responsive frontend e-commerce web application dedicated to showcasing and selling authentic Indian artisan jewelry. Built with React, Vite, and Tailwind CSS, this project features a luxury "frosted glass" navigation, rich heritage styling, and dynamic product routing.
 
-**Project Status:** Actively in development. Targeted launch: **February 22, 2026**.
+Project Status: Actively in development. Targeted launch: February 22, 2026.
 
----
-
-## 🚀 Getting Started
+🚀 Getting Started
 
 Follow these step-by-step instructions to get a copy of the project up and running on your local machine for development and testing.
 
-### Prerequisites
-Before you begin, ensure you have [Node.js](https://nodejs.org/) installed on your computer.
+Prerequisites
+Before you begin, ensure you have Node.js (https://nodejs.org/) installed on your computer.
 
-### Step 1: Get the Code
+Step 1: Get the Code
 
 You can download the code using one of two methods:
 
-#### Method A: Using Git (Recommended)
+Method A: Using Git (Recommended)
 Open your terminal and run the following command to clone the repository:
-```bash
-git clone [https://github.com/your-username/virasat-jewels.git](https://github.com/your-username/virasat-jewels.git)
 
-```
-
-#### Method B: Download ZIP
-
-1. Click the green **Code** button at the top right of the repository.
-2. Select **Download ZIP**.
-3. Locate the downloaded `.zip` file on your computer.
-4. Right-click the file and select **Extract All...** (Windows) or double-click to expand (Mac) to a folder of your choice.
-
-### Step 2: Install Dependencies
-
-Once you have the code, navigate into the project folder using your terminal:
-
-```bash
-cd virasat-jewels
-
-```
-
-Next, install all the required packages (Node Modules) by running:
-
-```bash
-npm install
-
-```
-
-> **Note:** This command reads the `package.json` file and downloads all the necessary tools (like React Router, Tailwind, and Lucide Icons) into a hidden `node_modules` folder.
-
-### Step 3: Run the Application
-
-Start the local development server:
-
-```bash
-npm run dev
-
-```
-
-Your terminal will provide a local link (usually `http://localhost:5173`). Click it or copy-paste it into your browser to see the website live!
-
----
+git clone https://github.com/Harshad313D/Artisans.git
 
 ## 📂 Folder Structure
 
