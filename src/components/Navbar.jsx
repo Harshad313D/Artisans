@@ -1,9 +1,19 @@
 import React, { useState, useEffect } from "react";
-import { Menu, ShoppingBag } from "lucide-react";
+import { Menu, ShoppingBag, User } from "lucide-react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+
+  // 1. Read the user directly from local storage
+  const userString = localStorage.getItem("user");
+  const user = userString ? JSON.parse(userString) : null;
+
+  // 2. Simple logout function
+  const handleLogout = () => {
+    localStorage.removeItem("user");
+    window.location.href = "/login"; // Hard redirect to clear Navbar state
+  };
 
   useEffect(() => {
     // Function to check scroll position
@@ -82,6 +92,38 @@ function Navbar() {
 
           {/* Icons */}
           <div className="flex items-center space-x-6">
+            {/* Conditional Rendering for User Auth */}
+            {user ? (
+              <div className="flex items-center space-x-4">
+                <span
+                  className={`font-medium text-sm transition-colors duration-300 ${
+                    isScrolled ? "text-[#1A1A1A]" : "text-white"
+                  }`}
+                >
+                  Hi, {user.name}
+                </span>
+                <button
+                  onClick={handleLogout}
+                  className={`text-xs font-semibold tracking-wider transition-colors duration-300 ${
+                    isScrolled
+                      ? "text-red-700 hover:text-red-900"
+                      : "text-red-300 hover:text-red-100"
+                  }`}
+                >
+                  LOGOUT
+                </button>
+              </div>
+            ) : (
+              <Link
+                to="/login"
+                className={`hover:text-[#D4AF37] transition-colors duration-300 ${
+                  isScrolled ? "text-[#1A1A1A]" : "text-white"
+                }`}
+              >
+                <User size={22} strokeWidth={1.5} />
+              </Link>
+            )}
+
             <button
               className={`hover:text-[#D4AF37] transition-colors duration-300 ${
                 isScrolled ? "text-[#1A1A1A]" : "text-white"

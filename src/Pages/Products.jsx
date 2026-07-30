@@ -2,9 +2,12 @@ import { Link } from "react-router-dom";
 import { products } from "../data";
 
 export default function Products() {
+
+  console.log("data:",products);
+  
   return (
-    <div className="max-w-7xl mx-auto px-4 py-16">
-      <div className="text-center mb-16">
+    <div className="max-w-7xl mx-auto px-4 py-16 mt-10">
+      <div className="text-center mb-16 bg-red-400">
         <h1 className="text-5xl font-serif text-heritage-dark mb-4">
           The Royal Treasury
         </h1>
@@ -14,7 +17,7 @@ export default function Products() {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
+      <div className="grid grid-cols-1 bg-green-400 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-10">
         {products.map((product) => (
           <Link
             to={`/product/${product.id}`}
@@ -44,6 +47,7 @@ export default function Products() {
             </div>
           </Link>
         ))}
+
       </div>
     </div>
   );

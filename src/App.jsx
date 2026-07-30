@@ -7,27 +7,30 @@ import About from "./Pages/About";
 import Contact from "./Pages/Contact";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-
-
-
-
+import Login from "./Pages/Login";
+import Register from "./Pages/Register";
 
 
 export default function App() {
   return (
-      <div className="min-h-screen bg-heritage-cream font-sans flex flex-col selection:bg-heritage-gold/30">
-        <Navbar />
-        <main className="flex-grow">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/product/:id" element={<ProductDetail />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+    <div className="min-h-screen bg-heritage-cream font-sans flex flex-col selection:bg-heritage-gold/30">
+      <Navbar />
+      <main className="flex-grow">
+        <Routes>
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
+
+
+
+          <Route path="/" element={<Home />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/product/:id" element={<ProductDetail />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
+      <Footer />
+    </div>
   );
 }
 
