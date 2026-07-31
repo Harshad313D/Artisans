@@ -17,13 +17,15 @@ function Register() {
     setError("");
   };
 
+  // console.log("formdata:", formData);
+
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
     setError("");
 
     try {
-      // Replace with your actual backend URL
       const response = await axios.post(
         "https://e-commerce-backend-5q60.onrender.com/api/v1/user/register",
         {
@@ -34,13 +36,12 @@ function Register() {
       );
 
       console.log("Registration successful:", response.data);
-      // Redirect to login page after successful registration
       navigate("/login");
     } catch (err) {
       console.error("Registration failed:", err);
       // Display error message from backend if it exists, otherwise show a generic error
       setError(
-        err.response?.data?.message ||
+        err.response?.message ||
           "Something went wrong. Please try again.",
       );
     } finally {
